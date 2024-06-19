@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="asset/tourism_logo.png" type="image/tourism">
+    <title>Contact Us</title>
+
+    <style>
+        main{
+            margin: 2%;
+        }
+        #contact-first-section h1{
+            font-size: 70px;
+            color: rgb(58, 106, 207);       
+            margin-bottom: 1rem; 
+            margin-left: 2%;   
+        }
+        #contact-first-section h2{
+            color: rgb(58, 106, 207);       
+            margin-bottom: 1rem; 
+            margin-left: 2%;   
+            font-size: 900;
+        }
+        #contact-first-section p{
+            color: #366c9e;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0; 
+        }
+
+        #contact-first-section .column{
+            align-items: flex-start;
+            flex: 1;
+            display: flex; 
+            flex-direction: column; 
+            align-items: start; 
+            margin: 0;
+            padding: 0;
+        }
+
+
+        #profile {
+            margin-top: 5rem;
+        }
+        #profile .column img {
+            height: 20rem; 
+            width: 100%;  
+            object-fit: inherit;
+            padding: 10px;
+            border-radius: 1rem;
+        }
+
+        #profile .profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            margin: 0 10px;
+            border: solid 1px rgba(231, 231, 230, 0.664);
+        }
+
+        #profile h1{
+            font-size: 20px;
+            color: rgb(59, 60, 63);
+            margin-bottom: 1rem;
+            
+        }
+
+        #profile p{
+            color: #334e68;
+            line-height: 1.5;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        #profile .bugkilled{
+            color: #9b0606;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2546a1;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background-color: #614caf;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a0a0;
+        }
+
+        button:active {
+            background-color: #3e8e8e;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="navigation"></header>
+    <nav id="navigation"></nav>
+    
+    <main >
+        <section class="section" id="contact-first-section">
+            <div class="wrapper">
+                <div class="column">
+                    <h1>Contact us</h1>
+                    <p>We would love to speak with you.</p>
+                    <p>Feel free to reach out using the below details.</p><br>
+                    <h2>Get In Touch</h2>
+                    <p><img src="asset/old-telephone-ringing.png" alt="phone" style="height: 20px; width: 20px;"> (036) 621 2935</p>
+                    <p><img src="asset/email.png" alt="phone" style="height: 20px; width: 20px;"> capiz.tourism@gmail.com</p>
+                </div>
+                <div class="column" >
+                    <img src="asset/capture_capiz.jpg" alt="tourism">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="profile">
+            <div class="wrapper">
+                <div class="column profile">
+                    <img src="asset/profile1.jpg" alt="profile 1">
+                    <h1>Christian David Diaz Moreno</h1>
+                    <p>Leader</p>
+                    <p>Programmer</p>
+                    <p>Designer</p>
+                    <p class="bugkilled">Bug killed: 50</p>
+
+                </div>
+                <div class="column profile" >
+                    <img src="asset/profile2.jpg" alt="profile 2">
+                    <h1>Carlos Emmanuel Luza Delgado</h1>
+                    <p>Programmer</p>
+                    <p>Researcher</p>
+                    <p>Single</p>
+                    <p class="bugkilled">Bug killed: 50</p>
+                </div>
+                <div class="column profile">
+                    <img src="asset/profile3.png" alt="profile 3">
+                    <h1>Matt Daniel Barrientos</h1>
+                    <p>Programmer</p>
+                    <p>Researcher</p>
+                    <p>Single</p>
+                    <p class="bugkilled">Bug killed: 50</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h1>Leave a Message</h1>
+                <div class="form-container">
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside id="second-aside"></aside>
+    <aside id="aside"></aside>
+    
+    <footer id="footer">​</footer>
+
+    
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your user ID
+        (function(){
+            emailjs.init('MuhjCapNGGATGj3GF'); 
+        })();
+
+        document.getElementById('messageForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+
+            // Retrieve values from the form
+            const userName = document.getElementById('name').value;
+            const userEmail = document.getElementById('email').value;
+            const userMessage = document.getElementById('message').value;
+
+            // Check if any of the required fields are empty
+            if (!userName || !userEmail || !userMessage) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // Template parameters for the email template
+            const templateParams = {
+                user_name: userName,
+                user_email: userEmail,
+                message: userMessage
+            };
+
+            // Service ID and Template ID from EmailJS dashboard
+            const serviceID = 'service_ljnncce'; 
+            const templateID = 'template_nuygsjj';
+
+            // Send email using EmailJS
+            emailjs.send(serviceID, templateID, templateParams)
+                .then(response => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Message sent successfully!');
+                    document.getElementById('messageForm').reset();
+                })
+                .catch(error => {
+                    console.error('FAILED...', error);
+                    alert('There was an error sending your message. Please try again later.');
+                });
+        });
+    </script>
+    
+</body>
+</html>
